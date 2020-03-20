@@ -21,7 +21,7 @@ connect.then(() => {
         console.log(campsite);
 
 
-        return Campsite.findByIdAndUpdate(campsite.id, {
+        return Campsite.findByIdAndUpdate(campsite._id, {
             $set: { description: 'Updated Test Document' }
         }, {
             new: true
